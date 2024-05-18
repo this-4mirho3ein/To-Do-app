@@ -1,0 +1,61 @@
+ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 8px 12px 50px;
+    cursor:pointer;
+    position: relative;
+    margin-bottom: 10px;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(../images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(../images/checked.png);
+}
+
+.div_btn{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 6rem;
+    top: 12px;
+    right: 1rem;
+}
+
+.div_btn span{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.Delete_btn{
+    background-color: red;
+    color: white;
+}
+
+.Delete_btn:hover{
+    background-color:crimson;
+}
+
+.Edit_btn{
+    background-color: green;
+    color: white;
+}
+
+.Edit_btn:hover{
+    background-color:darkgreen
+}
+
+

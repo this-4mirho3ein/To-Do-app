@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="bg-slate-700">
+    <div class="container bg-slate-100 mx-auto mt-10 rounded-md w-1/2 min-w-96">
+        <section class="top_section p-5">
+            <h1 class="font-bold text-lg">To-Do List</h1>
+            <div class="input_section flex flex-col md:flex-row mt-3">
+                <input type="text" placeholder="Enter Your text" id="input_tasks" class="rounded-l p-3 md:w-9/12 sm:mb-3 md:mb-0 border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500">
+                <button class="bg-green-500 p-3 rounded-r md:w-1/4 hover:bg-green-300" id="AddBtn" onclick="add_task()">Add</button>
+            </div>
+        </section>
+        <section>
+            <ul id="items_ul" class="pb-5">
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
